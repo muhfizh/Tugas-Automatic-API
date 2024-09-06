@@ -31,7 +31,21 @@ Anda dapat menjalankan tugas khusus yang telah dibuat dengan perintah berikut:
     gradlew clean test
     ```
 4. Akan muncul tampilan testing berjalan
+   ```bash
+    https://github.com/muhfizh/Tugas-Automatic-API/blob/main/screenshot%2016.png
+    ```
 5. jalankan perintah berikut :
     ```bash
     allure serve build\allure-results
     ```
+6. Hasil jalankan report allure
+    ```bash
+    https://github.com/muhfizh/Tugas-Automatic-API/blob/main/screenshot%2017.png
+    ```
+    
+   Hasil Negative test
+   ```bash
+   https://github.com/muhfizh/Tugas-Automatic-API/blob/main/screenshot%2018.png
+   https://github.com/muhfizh/Tugas-Automatic-API/blob/main/screenshot%2019.png
+   https://github.com/muhfizh/Tugas-Automatic-API/blob/main/screenshot%2020.png
+   ```
