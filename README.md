@@ -32,7 +32,7 @@ Anda dapat menjalankan tugas khusus yang telah dibuat dengan perintah berikut:
     ```
 4. Akan muncul tampilan testing berjalan
    ```bash
-    https://github.com/muhfizh/Tugas-Automatic-API/blob/main/screenshot%2016.png
+    https://github.com/muhfizh/Tugas-Automatic-API/blob/main/screenshot%2021.png
     ```
 5. jalankan perintah berikut :
     ```bash
@@ -40,12 +40,6 @@ Anda dapat menjalankan tugas khusus yang telah dibuat dengan perintah berikut:
     ```
 6. Hasil jalankan report allure
     ```bash
-    https://github.com/muhfizh/Tugas-Automatic-API/blob/main/screenshot%2017.png
+    https://github.com/muhfizh/Tugas-Automatic-API/blob/main/screenshot%2022.png
+    https://github.com/muhfizh/Tugas-Automatic-API/blob/main/screenshot%2023.png
     ```
-    
-   Hasil Negative test
-   ```bash
-   https://github.com/muhfizh/Tugas-Automatic-API/blob/main/screenshot%2018.png
-   https://github.com/muhfizh/Tugas-Automatic-API/blob/main/screenshot%2019.png
-   https://github.com/muhfizh/Tugas-Automatic-API/blob/main/screenshot%2020.png
-   ```
