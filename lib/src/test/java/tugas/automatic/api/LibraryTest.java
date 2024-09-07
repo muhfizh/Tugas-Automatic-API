@@ -38,8 +38,8 @@ public class LibraryTest {
     @Test
     public void createNewUserneg(){
         RestAssured.baseURI="https://reqres.in/";
-        String name = "jayjay";
-        String job = "Student";
+        int name = 23;
+        int job = 23;
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("name", name);
         jsonObject.put("job", job);
@@ -50,7 +50,7 @@ public class LibraryTest {
                 .post("api/users")
                 .then()
                 .assertThat().statusCode(201)
-                .assertThat().body("name", Matchers.equalTo("nama"))
+                .assertThat().body("name", Matchers.equalTo(name))
                 .assertThat().body("job", Matchers.equalTo(job))
                 .assertThat().body("$", Matchers.hasKey("id"))
                 .assertThat().body("$", Matchers.hasKey("createdAt"));
@@ -90,7 +90,7 @@ public class LibraryTest {
     public void updateUserNegTest(){
         RestAssured.baseURI="https://reqres.in/";
         int userId = 2;
-        String newName = "updatedUser";
+        int newName = 23;
         String fname = given().when().get("api/users/"+userId).getBody().jsonPath().get("data.first_name");
         String lname = given().when().get("api/users/"+userId).getBody().jsonPath().get("data.last_name");
         String avatar = given().when().get("api/users/"+userId).getBody().jsonPath().get("data.avatar");
@@ -111,7 +111,7 @@ public class LibraryTest {
                 .put("api/users/"+userId)
                 .then().log().all()
                 .assertThat().statusCode(200)
-                .assertThat().body("first_name", Matchers.equalTo(fname));
+                .assertThat().body("first_name", Matchers.equalTo(newName));
     }
 
     //positive test
@@ -154,11 +154,11 @@ public class LibraryTest {
     public void testPatchUserNeg(){
         RestAssured.baseURI="https://reqres.in/";
         int userId = 3;
-        String newName = "updatedUser";
+        int newName = 23;
         String fname = given().when().get("api/users/"+userId).getBody().jsonPath().get("data.first_name");
         System.out.println("name before = "+fname);
 
-        HashMap<String, String> bodyMap = new HashMap<>();
+        HashMap<String, Integer> bodyMap = new HashMap<>();
         bodyMap.put("first_name", newName);
         JSONObject jsonObject = new JSONObject(bodyMap);
 
@@ -168,6 +168,6 @@ public class LibraryTest {
                 .put("api/users/"+userId)
                 .then().log().all()
                 .assertThat().statusCode(200)
-                .assertThat().body("first_name", Matchers.equalTo(fname));
+                .assertThat().body("first_name", Matchers.equalTo(newName));
     }
 }
